@@ -1,0 +1,46 @@
+/* Estilos Globales de la Aplicación */
+
+/* Importar capas base de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS personalizadas para gradientes */
+:root { 
+  /* Definir colores del gradiente usando variables CSS */
+  --tw-gradient-from: #172554 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(23 37 84 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #131424 var(--tw-gradient-to-position);
+}
+
+
+/* Estilos para html y body: color base y fondo gradiente */
+html,
+body {
+  /* height: 100%; */ /* Comentado: puede habilitarse si es necesario */
+  color: #d6d6d6; /* Color de texto gris claro */
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  /* Gradiente de izquierda a derecha usando las variables CSS definidas */
+}
+
+/* Estilos para el elemento main: fondo y altura */
+main {
+  background: #393a47; /* Color de fondo oscuro */
+  height: 100vh; /* Alto total del viewport */
+  height: 100dvh; /* Altura dinámica del viewport (versión moderna) */
+}
+
+/* Personalización de los puntos de paginación del carrusel Swiper */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #000000; /* Color negro para los puntos de paginación */
+}
+
+/* Utilidades personalizadas agregadas a Tailwind */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; /* Distribuir texto de forma equilibrada */
+  }
+}
