@@ -21,7 +21,7 @@ const TestimonialsPage = () => {
             <TransitionPage />
 
             {/* Contenedor principal centrado verticalmente */}
-            <div className='flex flex-col justify-center h-lvh'>
+            <div className='flex flex-col justify-center h-lvh pt-24 md:pt-0'>
                 {/* Elemento gráfico circular decorativo (posicionado en corner) */}
                 <CircleImage />
 

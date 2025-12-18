@@ -11,7 +11,7 @@ const Introduction = () => {
         <div className="z-20 w-full   ">
             
             {/* Grid responsivo: imagen a la izquierda, contenido a la derecha */}
-            <div className="z-20 flex flex-col md:justify-center md:flex-row md:items-center h-full p-6 py-20 md:py-0 md:grid-cols-2 ">
+            <div className="z-20 flex flex-col items-center md:justify-center md:flex-row md:items-center h-full p-6 py-20 md:py-0 md:grid-cols-2 ">
                 {/* Imagen del desarrollador/avatar */}
                 <Image src="/home-4.png" priority width="350" height="350" alt="Avatar" />
 
@@ -39,18 +39,25 @@ const Introduction = () => {
                     </h1>
 
                     {/* Descripción/pitch del desarrollador */}
-                    <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
+                    <p className="mx-auto text-center md:text-left mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
                         Como desarrollador frontend y creador de contenido, me dedico a combinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
                     </p>
 
                     {/* Botón call-to-action para contacto */}
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
-                        <a href="/contact" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
-                            Contacta conmigo 
-                        </a>
+                        <p className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
+                            
+                            <a href="mailto:bogadoantoni4@gmail.com">bogadoantoni4@gmail.com</a>
+                            <br />
+                            <a href="https://api.whatsapp.com/send/?phone=393445587155&text&type=phone_number&app_absent=0">
+                                +39 344 558 7155
+                            </a>
+                        </p>
                     </div>
                     
                 </div>
+            </div>
+            <div className="h-screen md:hidden">
             </div>
         </div>
     );

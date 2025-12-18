@@ -33,7 +33,7 @@ const ServicesPage = () => {
                     <p className="mb-3 text-xl text-gray-300">Ofrezco servicios de desarrollo web frontend especializados en la creación de sitios web y aplicaciones atractivas y funcionales. Utilizando las últimas tecnologías, como TailwindCSS, JavaScript, TypeScript, entre otros. diseño interfaces de usuario intuitivas y responsivas que reflejan la identidad de marca de mis clientes y mejoran su presencia en línea.</p>
 
                     {/* Botón de call-to-action para contactar */}
-                    <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contacta conmigo</button>
+                    <a href="https://api.whatsapp.com/send/?phone=393445587155&text&type=phone_number&app_absent=0" className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contacta conmigo</a>
                 </div>
 
                 {/* Sección de carrusel de servicios (por completar) */}
